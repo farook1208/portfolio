@@ -20,29 +20,26 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
+        <span className="font-medium">Bachelor of Engineering</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        <span className="font-medium">MERN-stack web development </span>.{" "} <br/>
+       <span className="font-medium">  i love</span> the
+        feeling of finally Creating Best websites. Committed to clean code and delivering exceptional user experiences. Let's connect and build the future of the web together!. My core stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js,
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
+        . I am also familiar with TypeScript and Firebase. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        
+        <span className="font-medium">learning new things. I am currently
+        learning about Node-js </span>.
+       
       </p>
     </motion.section>
   );

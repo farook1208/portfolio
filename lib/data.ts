@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import carrental from "@/public/car.png";
+import twitterclone from "@/public/twitter.png"
+import fbclone from "@/public/fbclone.png";
 
 export const links = [
   {
@@ -35,73 +35,67 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated - BE ( Information Technology ) CGPA - 6.26",
+    location: "Hyderabad",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "MERN-Stack Web Development",
+    location: "Hyd- Digital lynk",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I enrolled in coding bootcamp and learned Mern -Stack web development. Has undergone training and completed course on MERN-Stak.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Feb-MAY 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "React-js developer",
+    location: "Hyderabad",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I am always looking to learn new technologies. I am currently looking for a full-time position as a React-js developer.",
+    icon: React.createElement(CgWorkAlt),
+    date: " Fresher",
   },
+  
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Car-Rental",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Here i build a car rental app using Next-js, React, Tailwind-css, GrapgQL, HyGraph,and TypeScript. We will start by setting up our project & installing the necessary dependencies. Then, create GrapgQL schema & API. ",
+    tags: ["React", "Next.js", "Tailwind-css", "GraphQL", "HyGraph"],
+    imageUrl: carrental,
+    github: "https://github.com/farook1208/Car-Rental-website",
+    project: "",
   },
   {
-    title: "rmtDev",
+    title: "Portfolio-Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Creating a Facebook clone using Next.js, Tailwind CSS, and NextAuth.js involves building a web application that replicates some of the core features and functionalities of Facebook, such as user authentication, news feed, and user profiles.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "NextAuth"],
+    imageUrl: fbclone,
+    github: "https://github.com/farook1208/fb-clone",
   },
+
   {
-    title: "Word Analytics",
+    title: "Twitter-Clone",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "1. Designed and developed a Twitter clone using next-js & Tailwind-css ,Firebase, showcasing expertise in modern web development framework & responsive design",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl:twitterclone ,
+    github: "https://github.com/farook1208/Twitter-clone",
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
+  "Tailwind-CSS",
   "JavaScript",
-  "TypeScript",
-  "React",
+  "React-js",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Firbase"
 ] as const;
