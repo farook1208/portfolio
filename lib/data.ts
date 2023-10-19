@@ -78,6 +78,7 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "NextAuth"],
     imageUrl: fbclone,
     github: "https://github.com/farook1208/fb-clone",
+    project: "",
   },
 
   {
@@ -87,6 +88,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl:twitterclone ,
     github: "https://github.com/farook1208/Twitter-clone",
+    project: "",
   },
 ] as const;
 

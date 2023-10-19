@@ -4,9 +4,8 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
 import { Github, Presentation } from "lucide-react";
-
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -16,6 +15,7 @@ export default function Project({
   tags,
   imageUrl,
   github,
+  project,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -34,55 +34,68 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <div className="flex items-center justify-center">
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.8] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/80"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className=" flex items-center justify-center">
+        <section className="bg-gray-100 group max-w-[42rem] opacity-80 hover:opacity-10 border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+              {description}
+            </p>
+            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          transition 
+          group-hover:scale-[1.04]
         group-hover:-translate-x-3
         group-hover:translate-y-3
         group-hover:-rotate-2
-
+        
         group-even:group-hover:translate-x-3
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
-
+        
         group-even:right-[initial] group-even:-left-40"
-        />
-      </section>
-      </div>
-      <div className="absolute flex items-center gap-x-[100px] hover:bg-opacity-10">
-        <Link className="flex-col flex gap-y-2 items-center cursor-pointer"
-        href={github}
-        target={"_blank"}
-        > 
-         <Github className="hidden text-orange- group-hover:block h-10  w-10"/>
-          <p className="hidden grop-hover:block font-medium text-sm text-orange-400">
-            {" "}
-            Github
-            </p> 
-         </Link>
+          />
+        </section>
+
+        <div className="absolute flex items-center gap-x-[100px] hover:bg-opacity-10 ">
+          <Link
+            className="flex flex-col gap-y-2 items-center cursor-pointer "
+            href={github}
+            target={"_blank"}
+          >
+            <Github className="hidden text-orange-500 group-hover:block h-10 w-10 " />
+            <p className="hidden group-hover:block  font-medium text-sm text-orange-400">
+              {" "}
+              Gihtub
+            </p>
+          </Link>
+          <Link
+            href={project}
+            className="flex flex-col gap-y-2 items-center cursor-pointer"
+            target={"_blank"}
+          >
+            <Presentation className="hidden text-orange-600 group-hover:block h-10 w-10 " />
+            <p className="hidden group-hover:block font-medium text-sm text-orange-400">
+              {" "}
+              Live
+            </p>
+          </Link>
+        </div>
       </div>
     </motion.div>
   );
