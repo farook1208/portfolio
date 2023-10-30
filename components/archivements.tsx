@@ -6,7 +6,7 @@ const archivements = () => {
     <div className=''>
     <h1 className='text-center border-l-indigo-50 text-3xl p-4 font-bold'>Certification & Internship</h1>
 
-<div className='flex h-80 w-90 pb-4 mr-0 ml-30 pt-6'>
+<div className='flex justify-center h-80 w-90 pb-4 pt-6'>
    
       <img src="/mern.jpg" alt="Image" />
       <img src='/Internship.jpg' alt='image2' />
