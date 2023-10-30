@@ -23,13 +23,13 @@ export default function About() {
         <span className="font-medium">Bachelor of Engineering</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">MERN-stack web development </span>.{" "} <br/>
-       <span className="font-medium">  i love</span> the
+       <span className="font-lite">  i love</span> the
         feeling of finally Creating Best websites. Committed to clean code and delivering exceptional user experiences. Let's connect and build the future of the web together!. My core stack
         is{" "}
         <span className="font-medium">
           React, Next.js,
         </span>
-        . I am also familiar with TypeScript and Firebase. I am always looking to
+        . I am also familiar with <span className="font-medium">TypeScript</span> and <span className="font-medium">Firebase</span>. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
@@ -37,8 +37,8 @@ export default function About() {
 
       <p>
         
-        <span className="font-medium">learning new things. I am currently
-        learning about Node-js </span>.
+        <span className="font-lite">I am currently
+        learning about <span className="font-medium"> Backend <span className="font-normal">like</span> Node-je, Express-js, MongoDb</span></span>.
        
       </p>
     </motion.section>
