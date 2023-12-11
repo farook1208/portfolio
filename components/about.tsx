@@ -38,7 +38,7 @@ export default function About() {
       <p>
         
         <span className="font-lite">I am currently
-        learning about <span className="font-medium"> Backend <span className="font-normal">like</span> Node-je, Express-js, MongoDb</span></span>.
+        learning about <span className="font-medium"> Backend <span className="font-normal">like</span> Node-js, Express-js and MongoDb</span></span>.
        
       </p>
     </motion.section>

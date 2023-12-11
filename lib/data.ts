@@ -23,6 +23,7 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
+
   {
     name: "Experience",
     hash: "#experience",
@@ -72,15 +73,15 @@ export const projectsData = [
     github: "https://github.com/farook1208/Car-Rental-website",
     project: "https://calm-manatee-54.accounts.dev/sign-in?redirect_url=https%3A%2F%2Fcar-rental-website-three.vercel.app%2F",
   },
-  {
-    title: "Portfolio-Website",
-    description:
-      "Creating a Facebook clone using Next.js, Tailwind CSS, and NextAuth.js involves building a web application that replicates some of the core features and functionalities of Facebook, such as user authentication, news feed, and user profiles.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "NextAuth"],
-    imageUrl: fbclone,
-    github: "https://github.com/farook1208/fb-clone",
-    project: "https://portfolio-nine-chi-49.vercel.app/",
-  },
+  // {
+  //   title: "Portfolio-Website",
+  //   description:
+  //     "Creating a Facebook clone using Next.js, Tailwind CSS, and NextAuth.js involves building a web application that replicates some of the core features and functionalities of Facebook, such as user authentication, news feed, and user profiles.",
+  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "NextAuth"],
+  //   imageUrl: fbclone,
+  //   github: "https://github.com/farook1208/fb-clone",
+  //   project: "https://portfolio-nine-chi-49.vercel.app/",
+  // },
 
   {
     title: "Twitter-Clone",
@@ -89,7 +90,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
     imageUrl:twitterclone ,
     github: "https://github.com/farook1208/Twitter-clone",
-    project: "",
+    project: "https://twitter-clone-mu-dun.vercel.app/",
   },
 ] as const;
 
